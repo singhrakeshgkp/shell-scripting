@@ -2,6 +2,7 @@
 - [001-Basic](#001-basic)
   - [Variables](#variables)
   - [Arguments](#Arguments)
+  - [Conditional Statements](#conditional-statements)
 
 
 ## 001-Basic
@@ -61,4 +62,54 @@
     echo ${args[0]},${args[1]},${args[2]}
     echo $@ # will print same output what above line will do
   ```
-   
+- Syntax can be used to print number of argument passed ```echo $#```    $# default variable provide num of arguments
+
+### Conditional Statements
+- Syntax if
+  ```
+   if[condition]
+    then
+      //statement
+    fi //end of if statements
+       
+  ```
+- Syntax if elseif
+   ```
+      age=25
+      if [ $age -gt 30 ]
+      then
+      echo "age is greater than 30  which is true"
+      elif [ $age -gt 20 ]
+      then
+      echo "age is greater than 20 which is true"
+      else
+      echo "no condition matched"
+   ```
+  - comparing integers
+    - first way to compare integer using -eg, -gt, -lt .....etc this will be used in [] brackets
+      ```
+        age=25
+        if [ $age -gt 20 ]
+        then
+        echo "age is greater than 20 which is true"
+        fi
+      ```
+     - Second way to compare integer using double parenthesis
+       ```
+        age=25
+        if (( $age > 20 )) # OR[ $age > 20 ]
+        then
+        echo "age is greater than 20 which is true"
+        fi
+       ```
+  - Comparing String
+    ```
+      name=rakesh
+      if [ $name == "rakesh" ]
+      then
+      echo "true"
+      else
+      echo "false"
+      fi
+    ```
+    
