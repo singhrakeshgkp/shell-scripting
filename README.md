@@ -1,8 +1,11 @@
 # shell-scripting
 - [001-Basic](#001-basic)
+  - Variables
 
 
-### 001-Basic
+## 001-Basic
+
+### Variables
 - Creating first shell program that prints hello.
    - Create a new file name hello.sh, add first line as ```#!<location of your bash>``` hash(#)+bang(!)= shbang. for linux location of bash is ```/bin/bash``` for unix ```/usr/bin/env``` And then finally print hello world uisng ```echo hello world``` command
    - Give execution permission using command ```chmod +x <file name> for me its hello.sh```, execute the hello.sh file using ```bash hello.sh``` command
@@ -40,3 +43,9 @@
    read -a  marks
    echo "your marks are  ${marks[0]},  ${marks[1]}"
    ```
+  - what if i don't provide any variable after ```read``` command (in this case data will be read in  system defined variable name $REPLY)
+    ```
+      echo "Enter name"
+      read
+      echo "your name is $REPLY"
+    ``` 
