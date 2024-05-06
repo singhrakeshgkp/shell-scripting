@@ -1,6 +1,7 @@
 # shell-scripting
 - [001-Basic](#001-basic)
   - [Variables](#variables)
+  - [Arguments](#Arguments)
 
 
 ## 001-Basic
@@ -49,3 +50,15 @@
       read
       echo "your name is $REPLY"
     ``` 
+### Arguments
+- First Approach
+   ```
+    echo $1 $2 $3
+   ```
+- Second Approach - Using array
+  ```
+    args=("$@")
+    echo ${args[0]},${args[1]},${args[2]}
+    echo $@ # will print same output what above line will do
+  ```
+   
