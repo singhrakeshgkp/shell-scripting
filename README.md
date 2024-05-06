@@ -1,6 +1,6 @@
 # shell-scripting
 - [001-Basic](#001-basic)
-  - Variables
+  - [Variables](#variables)
 
 
 ## 001-Basic
