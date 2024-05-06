@@ -10,3 +10,14 @@
    - System Variable ---> Created and maintained by unix or linux OS
    - User Defined Variable -->
 - Read Input from terminal
+   - Following code can be used to read single and multiple inputs from terminal
+     ```
+
+         echo "Enter name"
+         read name
+         echo "provided name is : $name"
+         
+         echo "Enter name and age"
+         read name1 age1 name2 age2
+         echo "provided name and age are : $name1 age= $age1 $name2 age = $age2"
+     ```
