@@ -1,5 +1,5 @@
 # shell-scripting
--Basic[#basic]
+- Basic[#basic]
 - File Handling[#file-handling]
 
 ### File Handling
