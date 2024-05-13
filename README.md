@@ -4,7 +4,8 @@
   - [Arguments](#Arguments)
   - [Conditional Statements](#conditional-statements)
   - [File Handling](#file-handling)
-
+     - [Append Output to end of file](#append-output-to-end-of-file)
+  - [Logical operators](#logical-operators)
 ## 001-Basic
 
 ### Variables
@@ -122,4 +123,21 @@
    - ``` -b ``` -> used for blob special file such as video, image ... etc
    - ``` -c ``` -> Used for charctor special file
    - ``` -s ``` -> Checks if file is empty
+   - ``` -r ``` -> Checks if file has read permissions
+   - ``` -w ``` -> Checks if file has write permissions
+   - ``` -x ``` -> Checks if file has execute permissions
 
+#### Append output to end of file
+- Refer 2-file-handling.sh
+- First input file name which does not exist, it should print file does not exist msg
+- Give the correct file name, it shoud append given char in the file if, file have write permissions
+- Remove the write permission ```chmod -w``` and test it out, it should print u don't have write permissions
+
+### Logical Operators
+- "AND" operator -> there are two approach to use it  with if syntax for same is given below
+  - approach1 -> ``` if [ "$sal" -gt 20 ] && [ "$sal" -lt 40 ] ```
+  - approach2 -> ``` if [ "$sal" -gt 20 -a "$sal" 0lt 40 ] ```
+- "OR" Operator
+    - approach1 -> ``` if [ "$salary" -eq 25000 ] || [ $salary -eq 40000 ] ```
+    - approach2 -> ``` [ "$salary" -eq 25000 -o "$salary" -eq 40000 ] ```
+- "NOT" Operator
