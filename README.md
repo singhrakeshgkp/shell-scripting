@@ -3,6 +3,7 @@
   - [Variables](#variables)
   - [Arguments](#Arguments)
   - [Conditional Statements](#conditional-statements)
+  - [Case Statements](#case-statements)
   - [File Handling](#file-handling)
      - [Append Output to end of file](#append-output-to-end-of-file)
   - [Logical operators](#logical-operators)
@@ -114,7 +115,11 @@
       echo "false"
       fi
     ```
-
+  ### Case Statements
+  - expression
+    ```
+    
+    ```
   ### File Handling
 - Refer file_handling dir for pratices
 - Some important flags used
