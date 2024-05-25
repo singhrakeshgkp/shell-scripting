@@ -6,7 +6,7 @@
   - [File Handling](#file-handling)
      - [Append Output to end of file](#append-output-to-end-of-file)
   - [Logical operators](#logical-operators)
-  - [Arithmetic Operator](#arithmetic-operators)
+  - [Arithmetic Operations](#arithmetic-operations)
 ## 001-Basic
 
 ### Variables
@@ -142,6 +142,11 @@
     - approach1 -> ``` if [ "$salary" -eq 25000 ] || [ $salary -eq 40000 ] ```
     - approach2 -> ``` [ "$salary" -eq 25000 -o "$salary" -eq 40000 ] ```
 
-### Arithmetic Operators
-- approach 1 ----> Using double ```(())```  example    ```echo $(( num1 + num2 )) ```
-- approach 2-----> Using ```expr``` keyword example ```echo $(expr $num1 + $num2 )
+### Arithmetic Operations
+- Performing Arithmetic operations on integers
+  - approach 1 (support integers only) ----> Using double ```(())```  example    ```echo $(( num1 + num2 )) ```
+  - approach 2 (support integers only)-----> Using ```expr``` keyword example ```echo $(expr $num1 + $num2 )```
+ 
+- Performing Arithmetic operations on floating points/decimal
+  - Here we will use ```bc``` command, BC stands for basic calculator, it comes with linux by default. To know more about bc run ```man bc``` command on your linux machine
+  - syntax ```echo "2+2" | bc```
