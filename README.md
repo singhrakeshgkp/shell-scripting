@@ -144,4 +144,4 @@
 
 ### Arithmetic Operators
 - approach 1 ----> Using double ```(())```  example    ```echo $(( num1 + num2 )) ```
-- approach 2-----> Using ```expr``` keyword example ```echo $( expr $num1 + $num2)
+- approach 2-----> Using ```expr``` keyword example ```echo $(expr $num1 + $num2 )
