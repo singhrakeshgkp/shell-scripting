@@ -6,6 +6,7 @@
   - [File Handling](#file-handling)
      - [Append Output to end of file](#append-output-to-end-of-file)
   - [Logical operators](#logical-operators)
+  - [Arithmetic Operator](#arithmetic-operators)
 ## 001-Basic
 
 ### Variables
@@ -140,4 +141,7 @@
 - "OR" Operator
     - approach1 -> ``` if [ "$salary" -eq 25000 ] || [ $salary -eq 40000 ] ```
     - approach2 -> ``` [ "$salary" -eq 25000 -o "$salary" -eq 40000 ] ```
-- "NOT" Operator
+
+### Arithmetic Operators
+- approach 1 ----> Using double ```(())```  example    ```echo $(( num1 + num2 )) ```
+- approach 2-----> Using ```expr``` keyword example ```echo $( expr $num1 + $num2)
