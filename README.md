@@ -10,11 +10,11 @@
   - [Arithmetic Operations](#arithmetic-operations)
      - Operations on integer and floating points
   - [Case Statement]
-  - [Array]
+  - [Array](#)
   - [Loop](#loop)
     - [while loop](#while-loop)
-       - [Using Sleep in while loop]
-       - [Read file using while loop]
+       - [Using Sleep in while loop](#)
+       - [Read file using while loop](#)
     
 ## 001-Basic
 
