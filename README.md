@@ -9,7 +9,7 @@
   - [Logical operators](#logical-operators)
   - [Arithmetic Operations](#arithmetic-operations)
      - Operations on integer and floating points
-  - [Case Statement]
+  - [Case Statement](#)
   - [Array](#)
   - [Loop](#loop)
     - [while loop](#while-loop)
