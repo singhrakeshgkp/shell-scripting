@@ -8,6 +8,14 @@
      - [Append Output to end of file](#append-output-to-end-of-file)
   - [Logical operators](#logical-operators)
   - [Arithmetic Operations](#arithmetic-operations)
+     - Operations on integer and floating points
+  - [Case Statement]
+  - [Array]
+  - [Loop](#loop)
+    - [while loop](#while-loop)
+       - [Using Sleep in while loop]
+       - [Read file using while loop]
+    
 ## 001-Basic
 
 ### Variables
@@ -155,3 +163,5 @@
 - Performing Arithmetic operations on floating points/decimal
   - Here we will use ```bc``` command, BC stands for basic calculator, it comes with linux by default. To know more about bc run ```man bc``` command on your linux machine
   - syntax ```echo "2+2" | bc```
+### Loops
+#### While Loop
