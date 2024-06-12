@@ -15,6 +15,7 @@
     - [while loop](#while-loop)
        - [Using Sleep in while loop](#)
        - [Read file using while loop](#)
+ - [Signal And Trap](#signal-and-trap)    
     
 ## 001-Basic
 
@@ -167,3 +168,9 @@
   - syntax ```echo "2+2" | bc```
 ### Loops
 #### While Loop
+
+## Signal and Trap
+- if u run ```1-signal-and-trap.sh``` file, and press ctrl+c it will send signal ```SIGINT 2 which is interrupt from keyboard```
+- if u run ```1-signal-and-trap.sh``` file, and press ctrl+z it will send signal ```SIGTSTP 18,20,24  which is stopped typed at terminal```
+- if u run ```1-signal-and-trap.sh``` file, and in another terminal type ```kill -9``` followed by process id, it will ```SIGKILL 9``` signal
+- To read more about signal type ```man 7 signal``` command, this command will not work in unix
