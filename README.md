@@ -1,3 +1,4 @@
+
 # shell-scripting
 - [001-Basic](#001-basic)
   - [Variables](#variables)
@@ -186,3 +187,4 @@
 
 ### Debuging
 - run the script using ```bash -x <.sh file name>``` it will print each line until it detect line where error is
+
