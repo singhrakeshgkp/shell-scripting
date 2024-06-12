@@ -25,6 +25,8 @@
 - Variables
    - System Variable ---> Created and maintained by unix or linux OS
    - User Defined Variable -->
+      - Global Variable -->refer 4-function.sh
+      - Local variable-->refer 5-function.sh
 - Read Input from terminal
    - Following code can be used to read single and multiple inputs from terminal
      ```
