@@ -15,7 +15,10 @@
     - [while loop](#while-loop)
        - [Using Sleep in while loop](#)
        - [Read file using while loop](#)
- - [Signal And Trap](#signal-and-trap)    
+ - [Signal And Trap](#signal-and-trap)
+    - [Signal](#signal)
+    - [Trap](#trap)
+- [Debuging](#debuging)
     
 ## 001-Basic
 
@@ -170,7 +173,16 @@
 #### While Loop
 
 ## Signal and Trap
+
+#### Signal
 - if u run ```1-signal-and-trap.sh``` file, and press ctrl+c it will send signal ```SIGINT 2 which is interrupt from keyboard```
 - if u run ```1-signal-and-trap.sh``` file, and press ctrl+z it will send signal ```SIGTSTP 18,20,24  which is stopped typed at terminal```
 - if u run ```1-signal-and-trap.sh``` file, and in another terminal type ```kill -9``` followed by process id, it will ```SIGKILL 9``` signal
 - To read more about signal type ```man 7 signal``` command, this command will not work in unix
+#### Trap
+- run ```2-signal-and-trap.sh``` file and press ctr+c, it will trap/catch the signal and perform the operation u want to do, here we are printing msg. Note in this case script will continue its execution. Excepton to trap is ```kill -9 and KILLSTOP``` in these two cases even after trapping script will stop reunning.
+- create a new file, named ```test.txt``` run ```3-signal-and-trap.sh```,  once it receive any signal such as 2,0, 15. this will delete the test.txt file and exit from script
+- run ```4-signal-and-trap.sh``` it will delete the file and print message
+
+### Debuging
+- run the script using ```bash -x <.sh file name>``` it will print each line until it detect line where error is
